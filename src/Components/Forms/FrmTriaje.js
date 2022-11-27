@@ -317,6 +317,23 @@ const FrmTriaje = () => {
     switchMicrophone(!microphone);
   };
 
+
+const cancelarBtn = ()=>{
+  guardarInfoPaciente({
+    apellidos: "",
+    nombres: "",
+    edad: "",
+    peso: "",
+    talla: "",
+    temperatura: "",
+    presionarterial: "",
+    frecuenciarespiratoria: "",
+    imc: "",
+    frecuenciacardiaca: "",
+    pruebacovid: "",
+  });
+}
+
   return (
   
 
@@ -642,6 +659,7 @@ const FrmTriaje = () => {
 
       <div className="flex justify-end text-white gap-4 ">
         <button
+          onClick={cancelarBtn}
           type="button"
           className="bg-red-400 px-2 py-1 rounded-md hover:bg-red-500"
         >
@@ -650,6 +668,7 @@ const FrmTriaje = () => {
         <button
           type="submit"
           className="bg-cyan-500 px-2 py-1 rounded-md hover:bg-cyan-600"
+          
         >
           Guardar
         </button>

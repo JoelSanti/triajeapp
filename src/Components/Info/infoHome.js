@@ -21,11 +21,13 @@ const InfoHome = () => {
           <ul className="ml-2 mt-4 grid grid-cols-1 gap-4">
             <li className="flex gap-2 ">
               Enlace al Github
-              <img src={gitHubIcon} alt="icon" className="h-5 animate-pulse " />
+              <a href="https://github.com/JoelSanti/triajeapp">
+              <img src={gitHubIcon} alt="icon" className="h-5 animate-pulse " /></a>
             </li>
             <li className="flex gap-2">
               Enlace de video explicativo
-              <img src={videoIcon} alt="icon" className="h-5 animate-pulse" />
+              <a href="https://github.com/JoelSanti/triajeapp">
+              <img src={videoIcon} alt="icon" className="h-5 animate-pulse" /></a>
             </li>
           </ul>
         </div>
